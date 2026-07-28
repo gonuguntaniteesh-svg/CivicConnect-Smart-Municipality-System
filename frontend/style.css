@@ -1,0 +1,463 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #2563eb, #1e3a8a);
+}
+
+/* Top Bar */
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #111827;
+    padding: 15px 40px;
+    color: white;
+}
+
+.logout-btn {
+    background: #ef4444;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    color: white;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.logout-btn:hover {
+    background: #dc2626;
+}
+
+/* Main Container */
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+/* Card */
+.card {
+    background: white;
+    width: 450px;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.card h3 {
+    margin-bottom: 20px;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+textarea {
+    resize: none;
+    height: 80px;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 12px;
+    background: #2563eb;
+    border: none;
+    color: white;
+    font-weight: 600;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background: #1d4ed8;
+}
+
+/* Table */
+table {
+    width: 100%;
+    margin-top: 15px;
+    border-collapse: collapse;
+}
+
+th {
+    background: #2563eb;
+    color: white;
+    padding: 10px;
+    font-size: 14px;
+}
+
+td {
+    padding: 8px;
+    border: 1px solid #ddd;
+    text-align: center;
+    font-size: 13px;
+}
+
+tr:nth-child(even) {
+    background: #f3f4f6;
+}
+.status {
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.status.pending {
+    background: #facc15;
+    color: #000;
+}
+
+.status.processed {
+    background: #3b82f6;
+    color: white;
+}
+
+.status.solved {
+    background: #22c55e;
+    color: white;
+}
+
+select {
+    padding: 5px;
+    border-radius: 6px;
+}
+.admin-header {
+    background: #111827;
+    color: white;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.admin-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.admin-card {
+    background: white;
+    width: 90%;
+    max-width: 1100px;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.admin-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.admin-table th {
+    background: #2563eb;
+    color: white;
+    padding: 12px;
+}
+
+.admin-table td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.admin-table tr:hover {
+    background: #f3f4f6;
+}
+
+.admin-table select {
+    padding: 6px;
+    border-radius: 6px;
+}
+.badge {
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.badge.pending {
+    background: #facc15;
+    color: black;
+}
+
+.badge.processed {
+    background: #3b82f6;
+    color: white;
+}
+
+.badge.solved {
+    background: #22c55e;
+    color: white;
+}
+/* Authentication Pages */
+
+.auth-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.auth-card {
+    background: white;
+    width: 350px;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+.auth-card h2 {
+    margin-bottom: 25px;
+}
+
+.auth-card input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+.auth-btn {
+    width: 100%;
+    padding: 12px;
+    background: #2563eb;
+    border: none;
+    color: white;
+    font-weight: 600;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.auth-btn:hover {
+    background: #1d4ed8;
+}
+
+.auth-link {
+    margin-top: 15px;
+}
+/* ===== Premium Login UI ===== */
+
+.auth-body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    height: 100vh;
+    background: linear-gradient(135deg, #1e3a8a, #2563eb, #1d4ed8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.auth-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.glass-card {
+    width: 350px;
+    padding: 40px;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(15px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    color: white;
+}
+
+.glass-card h2 {
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    font-size: 14px;
+    margin-bottom: 25px;
+    opacity: 0.8;
+}
+
+/* Floating Inputs */
+.input-group {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+}
+
+.input-group label {
+    position: absolute;
+    left: 12px;
+    top: 12px;
+    font-size: 14px;
+    color: #555;
+    pointer-events: none;
+    transition: 0.3s ease;
+}
+
+.input-group input:focus + label,
+.input-group input:valid + label {
+    top: -8px;
+    left: 8px;
+    font-size: 12px;
+    background: white;
+    padding: 2px 6px;
+    border-radius: 4px;
+}
+
+/* Button */
+.primary-btn {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    background: #2563eb;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.primary-btn:hover {
+    background: #1d4ed8;
+    transform: translateY(-2px);
+}
+
+/* Bottom Text */
+.bottom-text {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.bottom-text a {
+    color: #fff;
+    font-weight: bold;
+    text-decoration: underline;
+}
+/* ===== User Dashboard ===== */
+
+.dashboard-body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #1e3a8a, #2563eb);
+}
+
+.dashboard-header {
+    background: #111827;
+    color: white;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dashboard-container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.dashboard-card {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.2);
+}
+
+.form-grid {
+    display: flex;
+    gap: 15px;
+}
+
+.form-grid input {
+    flex: 1;
+}
+
+.dashboard-card input,
+.dashboard-card select,
+.dashboard-card textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+.dashboard-card textarea {
+    height: 90px;
+    resize: none;
+}
+
+.primary-btn {
+    width: 100%;
+    padding: 12px;
+    background: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.primary-btn:hover {
+    background: #1d4ed8;
+    transform: translateY(-2px);
+}
+
+/* Modern Table */
+.modern-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.modern-table th {
+    background: #2563eb;
+    color: white;
+    padding: 12px;
+    text-align: center;
+}
+
+.modern-table td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.modern-table tr:hover {
+    background: #f3f4f6;
+}
+
+/* Logout */
+.logout-btn {
+    background: #ef4444;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    color: white;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.logout-btn:hover {
+    background: #dc2626;
+}
+
